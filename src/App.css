@@ -1,0 +1,17 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+}
+
+#root {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 77, 163, 0.38) 0%,
+    rgba(255, 77, 163, 0) 12.48%,
+    rgba(255, 77, 163, 0.38) 26.81%,
+    rgba(255, 77, 163, 0.0836) 46.62%,
+    rgba(0, 0, 0, 0.38) 90%,
+    rgba(255, 77, 163, 0.38) 97.81%
+  );
+}
