@@ -9,6 +9,9 @@ export interface ButtonProps {
   media425fSize?: string;
   media425Width?: string;
   media425Height?: string;
+  media768fSize?: string;
+  media768Width?: string;
+  media768Height?: string;
   text?: string;
 
   onClick?: MouseEventHandler<HTMLButtonElement>;

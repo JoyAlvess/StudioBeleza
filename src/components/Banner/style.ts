@@ -13,23 +13,24 @@ export const BannerImg = styled(BackgroundImg)<BannerProps>`
 
   @media (min-width: 320px) {
     background-image: url(${({ imgMobile }) => imgMobile});
-    height: 24vh;
+    height: ${({ media320height }) => media320height || "24vh"};
   }
 
   @media (min-width: 375px) {
     background-image: url(${({ imgMobile }) => imgMobile});
-    height: 30vh;
+    height: ${({ media375height }) => media375height || "30vh"};
   }
 
   @media (min-width: 425px) {
     background-image: url(${({ imgMobile }) => imgMobile});
-    height: 35vh;
+
+    height: ${({ media425height }) => media425height || "35vh"};
   }
 
   @media (min-width: 768px) {
-    margin-top: 100px;
     background-image: url(${({ imgDesk }) => imgDesk});
-    height: 64vh;
+    height: ${({ media768height }) => media768height};
     border-radius: 0;
+    margin-top: 0px;
   }
 `;

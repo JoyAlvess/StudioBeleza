@@ -37,7 +37,12 @@ export const ContainerCard = styled.section`
   display: flex;
   flex-direction: column;
   padding-left: 15px;
-  padding-right: 15px;
+
+  /* padding-right: 15px; */
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 `;
 
 export const ContentCard = styled.div`
@@ -68,48 +73,61 @@ export const ContainerAboutUs = styled.section`
 
   padding-left: 15px;
   padding-right: 15px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const CreateAccount = styled.section`
   position: relative;
   height: 185px;
+
+  @media (min-width: 768px) {
+    margin-top: 175px;
+  }
 `;
 
 export const ContentButtonAboutUs = styled.div`
   position: relative;
   bottom: calc(100px - 200px);
   margin-left: 15px;
+
+  @media (min-width: 768px) {
+    bottom: calc(100px - 125px);
+  }
 `;
 
 export const ContainerCta = styled(BackgroundImg)`
-  img {
-    margin: 30px 15px;
-  }
+  padding-left: 15px;
+  padding-right: 15px;
 
-  @media (min-width: 425px) {
-    img {
-      margin: 0 15px;
-    }
+  @media (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
   }
 `;
 
 export const ContentCta = styled.div`
   position: absolute;
-  top: calc(100% - 65%);
+  top: calc(100% - 87%);
 
   display: flex;
   align-items: center;
 
-  width: 276px;
+  width: 270px;
 
   @media (min-width: 375px) {
-    top: calc(100% - 63%);
+    top: calc(100% - 85%);
     width: 326px;
   }
 
   @media (min-width: 425px) {
-    top: calc(100% - 69%);
+    top: calc(100% - 80%);
     width: 364px;
+  }
+
+  @media (min-width: 768px) {
   }
 `;
 
@@ -118,6 +136,11 @@ export const SubTitle = styled(Title)`
 
   @media (min-width: 425px) {
     font-size: ${({ media425fSize }) => media425fSize};
+  }
+
+  @media (min-width: 768px) {
+    font-size: ${({ media768fSize }) => media768fSize};
+    line-height: 30px;
   }
 `;
 
@@ -129,6 +152,7 @@ export const ContainerContact = styled.article`
     display: flex;
     justify-content: space-between;
     margin: 0 20px;
+    padding: 0;
     align-items: baseline;
   }
 `;

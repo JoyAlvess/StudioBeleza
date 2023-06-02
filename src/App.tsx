@@ -41,7 +41,8 @@ import ImgDeskBanner from "./assets/bannerDesktop.png";
 import ImgDeskAboutUs from "./assets/sobreNosDesktop.png";
 
 // import ImgSobreNos from "./assets/sobre-nos.png";
-import ImgCta from "./assets/agendeAgora.png";
+import ImgMobileCta from "./assets/agendeAgora.png";
+import ImgDeskCta from "./assets/agendeAgoraDesk.png";
 
 import IconMap from "./assets/iconMap.svg";
 import IconFacebook from "./assets/iconFacebook.svg";
@@ -58,6 +59,7 @@ function App() {
           mTop="100px"
           imgMobile={ImgMobileBanner}
           imgDesk={ImgDeskBanner}
+          media768height="67vh"
         />
       </ContainerBanner>
 
@@ -81,7 +83,14 @@ function App() {
       <ContainerAboutUs>
         <BackgroundImg>
           {/* <img src={ImgSobreNos} alt="Sobre nós" /> */}
-          <Banner imgMobile={ImgMobileAboutUs} imgDesk={ImgDeskAboutUs} />
+          <Banner
+            imgMobile={ImgMobileAboutUs}
+            imgDesk={ImgDeskAboutUs}
+            media320height="30vh"
+            media375height="36vh"
+            media425height="40vh"
+            media768height="50vh"
+          />
 
           <Texts
             padding="0 23px"
@@ -104,19 +113,37 @@ function App() {
         <ContentButtonAboutUs>
           <Button
             text="Cadastre-se"
-            mTop="35px"
+            mTop="15px"
             width="145px"
             height="30px"
             media425Height="35px"
             media425Width="155px"
+            media425Mtop="0"
+            media768Width="185px"
+            media768Height="40px"
+            media768fSize="17px"
           />
         </ContentButtonAboutUs>
       </CreateAccount>
 
       <ContainerCta>
-        <img src={ImgCta} alt="Agende seu horário" />
+        {/* <img src={ImgCta} alt="Agende seu horário" /> */}
+        <Banner
+          imgMobile={ImgMobileCta}
+          imgDesk={ImgDeskCta}
+          media320height="11vh"
+          media375height="12vh"
+          media425height="14vh"
+          media768height="27vh"
+        />
+
         <ContentCta>
-          <SubTitle fSize="14px" media425fSize="16px" fWeight="400">
+          <SubTitle
+            fSize="14px"
+            media425fSize="16px"
+            media768fSize="25px"
+            fWeight="400"
+          >
             Agende qualquer procedimento!
           </SubTitle>
           <Button

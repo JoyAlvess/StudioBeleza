@@ -21,11 +21,23 @@ export const StyledButton = styled.button<ButtonProps>`
   outline: none;
   border: 0;
 
+  @media (min-width: 375px) {
+    margin-top: 0;
+  }
+
   @media (min-width: 425px) {
     margin-top: ${({ media425Mtop }) => media425Mtop || "15px"};
     font-size: ${({ media425fSize }) => media425fSize};
 
     width: ${({ media425Width }) => media425Width};
     height: ${({ media425Height }) => media425Height};
+  }
+
+  @media (min-width: 768px) {
+    /* margin-top: ${({ media425Mtop }) => media425Mtop || "15px"}; */
+    font-size: ${({ media768fSize }) => media768fSize};
+
+    width: ${({ media768Width }) => media768Width};
+    height: ${({ media768Height }) => media768Height};
   }
 `;
