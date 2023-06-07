@@ -19,6 +19,12 @@ export const CardImg = styled.div<CardProps>`
       width: 150px;
     }
   }
+
+  @media (min-width: 1440px) {
+    img {
+      width: 225px;
+    }
+  }
 `;
 
 export const CardLabel = styled.span<CardProps>`

@@ -34,7 +34,6 @@ export const StyledButton = styled.button<ButtonProps>`
   }
 
   @media (min-width: 768px) {
-    /* margin-top: ${({ media425Mtop }) => media425Mtop || "15px"}; */
     font-size: ${({ media768fSize }) => media768fSize};
 
     width: ${({ media768Width }) => media768Width};

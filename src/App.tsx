@@ -40,7 +40,6 @@ import ImgMobileAboutUs from "./assets/sobre-nos.png";
 import ImgDeskBanner from "./assets/bannerDesktop.png";
 import ImgDeskAboutUs from "./assets/sobreNosDesktop.png";
 
-// import ImgSobreNos from "./assets/sobre-nos.png";
 import ImgMobileCta from "./assets/agendeAgora.png";
 import ImgDeskCta from "./assets/agendeAgoraDesk.png";
 
@@ -59,7 +58,7 @@ function App() {
           mTop="100px"
           imgMobile={ImgMobileBanner}
           imgDesk={ImgDeskBanner}
-          media768height="67vh"
+          media768height="65vh"
         />
       </ContainerBanner>
 
@@ -82,7 +81,6 @@ function App() {
 
       <ContainerAboutUs>
         <BackgroundImg>
-          {/* <img src={ImgSobreNos} alt="Sobre nós" /> */}
           <Banner
             imgMobile={ImgMobileAboutUs}
             imgDesk={ImgDeskAboutUs}
@@ -127,7 +125,6 @@ function App() {
       </CreateAccount>
 
       <ContainerCta>
-        {/* <img src={ImgCta} alt="Agende seu horário" /> */}
         <Banner
           imgMobile={ImgMobileCta}
           imgDesk={ImgDeskCta}

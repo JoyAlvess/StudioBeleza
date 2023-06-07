@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { BannerProps } from "./Banner.types";
 import { BackgroundImg } from "../BackgroundImg/style";
+import ImgDesk1024 from "../../assets/bannerDesktop1024.png";
 
 export const BannerImg = styled(BackgroundImg)<BannerProps>`
   min-width: 100%;
@@ -31,6 +32,9 @@ export const BannerImg = styled(BackgroundImg)<BannerProps>`
     background-image: url(${({ imgDesk }) => imgDesk});
     height: ${({ media768height }) => media768height};
     border-radius: 0;
-    margin-top: 0px;
+  }
+
+  @media (min-width: 1024px) {
+    background-position: center;
   }
 `;

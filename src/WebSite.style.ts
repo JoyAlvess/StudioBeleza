@@ -51,6 +51,20 @@ export const ContentCard = styled.div`
   overflow-y: hidden;
 
   margin-bottom: 45px;
+
+  &::-webkit-scrollbar {
+    /* width: 10px; */
+    height: 1px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 `;
 
 export const TitleSection = styled.span`
@@ -110,24 +124,29 @@ export const ContainerCta = styled(BackgroundImg)`
 
 export const ContentCta = styled.div`
   position: absolute;
-  top: calc(100% - 87%);
-
+  /* top: calc(100% - 87%); */
+  padding-top: 13px;
   display: flex;
   align-items: center;
 
   width: 270px;
 
   @media (min-width: 375px) {
-    top: calc(100% - 85%);
+    /* top: calc(100% - 85%); */
+    padding-top: 17px;
     width: 326px;
   }
 
   @media (min-width: 425px) {
-    top: calc(100% - 80%);
+    /* top: calc(100% - 80%); */
+    padding-top: 26px;
     width: 364px;
   }
 
   @media (min-width: 768px) {
+    padding-top: 43px;
+    width: 768px;
+    flex-direction: column;
   }
 `;
 
@@ -140,7 +159,8 @@ export const SubTitle = styled(Title)`
 
   @media (min-width: 768px) {
     font-size: ${({ media768fSize }) => media768fSize};
-    line-height: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -150,7 +170,7 @@ export const ContainerContact = styled.article`
 
   @media (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 0 20px;
     padding: 0;
     align-items: baseline;
@@ -159,6 +179,10 @@ export const ContainerContact = styled.article`
 
 export const ContentSocialMedia = styled.div`
   margin: 15px 0;
+
+  @media (min-width: 768px) {
+    margin-left: 100px;
+  }
 `;
 
 export const WrapperContact = styled.div``;
@@ -172,6 +196,10 @@ export const Footer = styled.footer`
   display: flex;
   justify-content: center;
   padding: 15px 0;
+
+  @media (min-width: 765px) {
+    padding: 43px 0px 15px;
+  }
 `;
 
 export const FooterSignature = styled.span`
