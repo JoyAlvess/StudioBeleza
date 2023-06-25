@@ -25,6 +25,13 @@ export const Navigator = styled.nav`
   background: rgba(63, 0, 30, 0);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 8px 8px;
+
+  @media (min-width: 768px) {
+    height: 14vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 
 export const ListLogoIcon = styled.ul`
@@ -32,6 +39,19 @@ export const ListLogoIcon = styled.ul`
   justify-content: space-between;
   padding: 15px 15px 0;
   align-items: center;
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+
+    #iconlogo {
+      padding-top: 0;
+    }
+
+    #iconmenu {
+      display: none;
+      padding-top: 0;
+    }
+  }
 `;
 
 export const ListItems = styled.ul`
@@ -48,6 +68,49 @@ export const ListItems = styled.ul`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 8px 8px;
   height: 100vh;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+
+    background: transparent;
+
+    box-shadow: none;
+    border-radius: 0;
+    height: 0;
+
+    li {
+      &:nth-child(even) {
+        padding: 0 15px;
+      }
+
+      &:nth-last-child(1) {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    li {
+      &:nth-child(even) {
+        padding: 0 30px;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    li {
+      &:nth-child(even) {
+        padding: 0 30px;
+      }
+
+      &:nth-last-child(1) {
+        margin-right: 15px;
+      }
+    }
+  }
 `;
 
 export const Ancor = styled.a`

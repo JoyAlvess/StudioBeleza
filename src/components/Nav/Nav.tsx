@@ -12,49 +12,35 @@ export const Nav = () => {
 
   return (
     <>
-      {showNav ? (
-        <Header id="navscrool">
-          <Navigator>
-            <ListLogoIcon>
-              <li>
-                <Ancor href="#">
-                  <img src={Logo} alt="Logo" />
-                </Ancor>
-              </li>
-              <li onClick={navShow}>
-                <img src={MenuIcon} alt="Menu" />
-              </li>
-            </ListLogoIcon>
-            <ListItems>
-              <li>
-                <Ancor href="#">Home</Ancor>
-              </li>
-              <li>
-                <Ancor href="#">Sobre nós</Ancor>
-              </li>
-              <li>
-                <Ancor href="#">Unidades</Ancor>
-              </li>
-              <li>
-                <Ancor href="#">Contato</Ancor>
-              </li>
-            </ListItems>
-          </Navigator>
-        </Header>
-      ) : (
-        <Header id="nav">
+      <Header id="navscrool">
+        <Navigator>
           <ListLogoIcon>
             <li>
               <Ancor href="#">
-                <img src={Logo} alt="Logo" />
+                <img id="iconlogo" src={Logo} alt="Logo" />
               </Ancor>
             </li>
-            <li onClick={navShow}>
+            <li id="iconmenu" onClick={navShow}>
               <img src={MenuIcon} alt="Menu" />
             </li>
           </ListLogoIcon>
-        </Header>
-      )}
+
+          <ListItems>
+            <li>
+              <Ancor href="#">Home</Ancor>
+            </li>
+            <li>
+              <Ancor href="#">Sobre nós</Ancor>
+            </li>
+            <li>
+              <Ancor href="#">Unidades</Ancor>
+            </li>
+            <li>
+              <Ancor href="#">Contato</Ancor>
+            </li>
+          </ListItems>
+        </Navigator>
+      </Header>
     </>
   );
 };
