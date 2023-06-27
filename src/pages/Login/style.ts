@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Button } from "../components/Button";
+import { Link } from "react-router-dom";
+import { Button } from "../../components/Button";
 
 export const Container = styled.div`
   display: flex;
@@ -38,7 +39,7 @@ export const Label = styled.span`
   font-weight: 300;
 `;
 
-export const Link = styled.a`
+export const Ancor = styled(Link)`
   color: #d891f2;
   cursor: pointer;
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { BackgroundImg } from "../components/BackgroundImg/style";
-import { Title } from "../components/Texts/style";
+import { BackgroundImg } from "../../components/BackgroundImg/style";
+import { Title } from "../../components/Texts/style";
 
 export const Main = styled.main`
   width: 100vw;

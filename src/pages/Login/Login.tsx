@@ -1,10 +1,10 @@
-import { Container, Logo, ButtonAccess, Wrapper, Label, Link } from "./style";
+import { Container, Logo, ButtonAccess, Wrapper, Label, Ancor } from "./style";
 
-import { Input } from "../components/Input";
+import { Input } from "../../components/Input";
 
-import IconAcessarConta from "../assets/logoAcessarConta.svg";
-import IconEmail from "../assets/iconEmail.svg";
-import IconLock from "../assets/iconLock.svg";
+import IconAcessarConta from "../../assets/logoAcessarConta.svg";
+import IconEmail from "../../assets/iconEmail.svg";
+import IconLock from "../../assets/iconLock.svg";
 
 export const Login = () => {
   return (
@@ -19,7 +19,7 @@ export const Login = () => {
 
       <Wrapper>
         <Label>
-          Não possui cadastro? <Link>Clique aqui</Link>
+          Não possui cadastro? <Ancor to="/cadastre-se">Clique aqui</Ancor>
         </Label>
       </Wrapper>
     </Container>
