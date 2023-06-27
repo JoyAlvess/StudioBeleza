@@ -113,7 +113,7 @@ export const ListItems = styled.ul`
   }
 `;
 
-export const Ancor = styled.a`
+export const Ancor = styled.span`
   font-family: "Lexend";
   font-style: normal;
   font-weight: 300;

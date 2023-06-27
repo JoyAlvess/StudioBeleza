@@ -13,13 +13,14 @@ export const StyledButton = styled.button<ButtonProps>`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
 
-  border-radius: 3px;
+  border-radius: 4px;
   background: #ff4da3;
   color: #ffffff;
   filter: drop-shadow(2px 4px 8px rgba(255, 255, 255, 0.5));
 
   outline: none;
   border: 0;
+  cursor: pointer;
 
   @media (min-width: 375px) {
     margin-top: 0;

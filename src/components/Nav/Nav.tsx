@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Header, Navigator, ListLogoIcon, ListItems, Ancor } from "./style";
 import Logo from "../../assets/logo.svg";
@@ -16,9 +17,11 @@ export const Nav = () => {
         <Navigator>
           <ListLogoIcon>
             <li>
-              <Ancor href="#">
-                <img id="iconlogo" src={Logo} alt="Logo" />
-              </Ancor>
+              <Link to="/">
+                <Ancor>
+                  <img id="iconlogo" src={Logo} alt="Logo" />
+                </Ancor>
+              </Link>
             </li>
             <li id="iconmenu" onClick={navShow}>
               <img src={MenuIcon} alt="Menu" />
@@ -27,16 +30,20 @@ export const Nav = () => {
 
           <ListItems>
             <li>
-              <Ancor href="#">Home</Ancor>
+              <Link to="/">
+                <Ancor>Home</Ancor>
+              </Link>
             </li>
             <li>
-              <Ancor href="#">Sobre nós</Ancor>
+              <Ancor>Sobre nós</Ancor>
             </li>
             <li>
-              <Ancor href="#">Unidades</Ancor>
+              <Ancor>Unidades</Ancor>
             </li>
             <li>
-              <Ancor href="#">Contato</Ancor>
+              <Link to="/login">
+                <Ancor>Login</Ancor>
+              </Link>
             </li>
           </ListItems>
         </Navigator>
