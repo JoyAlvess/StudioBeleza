@@ -24,6 +24,10 @@ export const Inbox = styled.input<InputProps>`
     font-weight: 300;
     color: #4b1863;
   }
+
+  @media (min-width: 425px) {
+    width: 290px;
+  }
 `;
 
 export const Icon = styled.div`

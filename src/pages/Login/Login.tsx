@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container, Logo, ButtonAccess, Wrapper, Label, Ancor } from "./style";
 
 import { Input } from "../../components/Input";
@@ -15,7 +16,9 @@ export const Login = () => {
 
       <Input img={IconEmail} alt="email" placeholder="e-mail" type="email" />
       <Input img={IconLock} alt="senha" placeholder="senha" type="password" />
-      <ButtonAccess text="Acessar" fSize="18px" />
+      <Link to="/perfil">
+        <ButtonAccess text="Acessar" fSize="18px" />
+      </Link>
 
       <Wrapper>
         <Label>

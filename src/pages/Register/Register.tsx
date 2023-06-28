@@ -1,3 +1,4 @@
+// import { Link } from "react-router-dom";
 import {
   Container,
   Logo,
@@ -46,6 +47,7 @@ export const Register = () => {
       />
 
       <ButtonAccess text="Cadastrar" fSize="18px" />
+
       <Wrapper>
         <Label>
           Já possui cadastro?

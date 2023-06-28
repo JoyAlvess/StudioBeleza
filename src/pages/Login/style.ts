@@ -22,21 +22,30 @@ export const ButtonAccess = styled(Button)`
   height: 46px;
   margin: 15px 0 0;
   box-shadow: 0 rgba(255, 255, 255, -0.75);
+
+  @media (min-width: 425px) {
+    width: 348px;
+  }
 `;
 
 export const Wrapper = styled.div`
-  width: 87vw;
+  width: 278px;
   display: flex;
   justify-content: end;
   align-items: end;
   margin-top: 15px;
+
+  @media (min-width: 425px) {
+    width: 348px;
+  }
 `;
 
 export const Label = styled.span`
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 14px;
   font-family: Lexend;
-  font-weight: 300;
+  font-weight: 200;
+  text-align: end;
 `;
 
 export const Ancor = styled(Link)`
